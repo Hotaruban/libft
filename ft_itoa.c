@@ -6,7 +6,7 @@
 /*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/31 22:14:51 by jeremy            #+#    #+#             */
-/*   Updated: 2023/01/31 23:17:37 by jeremy           ###   ########.fr       */
+/*   Updated: 2023/02/03 12:32:59 by jeremy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,13 @@ Return the string in malloc.
 
 #include <stdlib.h>
 
-size_t		check_len(int n)
+size_t	check_len(int n)
 {
 	size_t	len;
 
+	len = 0;
 	if (n <= 0)
 		len = 1;
-	else
-		len = 0;
 	while (n != 0)
 	{
 		n = n / 10;
