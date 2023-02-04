@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:38:39 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 18:48:33 by jeremy           ###   ########.fr       */
+/*   Updated: 2023/02/04 22:59:53 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ Return the pointer to the content with malloc memory allocated.
 
 t_list *ft_lstnew(void *content)
 {
-	t_list	new_node;
+	t_list	*new_node;
 
 	new_node = (t_list *)malloc(sizeof(t_list));
 	if (new_node != NULL)

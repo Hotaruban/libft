@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:38:19 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 18:52:17 by jeremy           ###   ########.fr       */
+/*   Updated: 2023/02/04 22:57:49 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,14 @@ to the function pointed by del, and free the memory of the nodes.
 
 void ft_lstclear(t_list **lst, void (*del)(void*))
 {
-	void	*temp;
+	t_list	*temp;
 	t_list	*node;
 
 	temp = *lst;
 	while (temp != NULL)
 	{
 		node = temp->next;
-		*del(temp->content);
+		(*del)(temp->content);
 		free(temp);
 		temp = node;
 	}

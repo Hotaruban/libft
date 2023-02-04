@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/31 22:15:20 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 17:39:23 by jeremy           ###   ########.fr       */
+/*   Updated: 2023/02/04 23:29:45 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,16 +22,17 @@ Return nothing.
 
 void	ft_putnbr_fd(int n, int fd)
 {
+	char	c;
+	int		sign;
+
+	sign = 1;
 	if (n < 0)
 	{
 		ft_putchar_fd('-', fd);
-		ft_putnbr_fd((long)n , fd);
+		sign = -1;
 	}
-	else if (n > 9)
-	{
-		ft_putnbr_fd((n / 10), fd);
-		ft_putchar_fd((n % 10 + 48), fd);
-	}
-	else
-		ft_putchar_fd((n + 48), fd);
+	if (n / 10)
+		ft_putnbr_fd(n / 10 * sign, fd);
+	c = (n % 10 * sign) + 48;
+	ft_putchar_fd(c, fd);
 }

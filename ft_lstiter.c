@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:38:27 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 19:00:00 by jeremy           ###   ########.fr       */
+/*   Updated: 2023/02/04 22:58:24 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ The function ft_lstiter pass the nodes start from lst in function pointed by f o
 void ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (lst == NULL)
-		return (NULL);
+		return ;
 	(*f)(lst->content);
 	ft_lstiter(lst->next, f);
 }
