@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:38:19 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 22:57:49 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/02/05 00:39:33 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void ft_lstclear(t_list **lst, void (*del)(void*))
 	while (temp != NULL)
 	{
 		node = temp->next;
-		(*del)(temp->content);
+		del(temp->content);
 		free(temp);
 		temp = node;
 	}
