@@ -6,7 +6,7 @@
 /*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:38:45 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 17:38:46 by jeremy           ###   ########.fr       */
+/*   Updated: 2023/02/04 18:56:24 by jeremy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,18 +20,15 @@ Return the lenght of the list.
 
 int ft_lstsize(t_list *lst)
 {
-	size_t	len_list;
+	size_t	i;
+	t_list	*node;
 
-	if (lst->content == NULL)
+	node = lst;
+	i = 0;
+	while (node != NULL)
 	{
-		len_list = 0;
-		return (len_list);
+		node = node->next;
+		i++;
 	}
-	len_list = 1;
-	while (lst->next != NULL)
-	{
-		lst = lst->next;
-		len_list++;
-	}
-	return (len_list);
+	return (i);
 }
