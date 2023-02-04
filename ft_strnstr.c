@@ -1,5 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/02/04 17:40:21 by jeremy            #+#    #+#             */
+/*   Updated: 2023/02/04 17:40:22 by jeremy           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
-The function ft_strnstr locates the first occurence of 
+The function ft_strnstr locates the first occurence of
 null terminated string needle in the string haystack,
 where no more than len charactere are searched.
 
@@ -15,7 +27,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	needle_len;
 	size_t	i;
 	char	*ptr;
-	
+
 	ptr = (char *) haystack;
 	needle_len = ft_strlen(needle);
 	if (needle_len == 0)

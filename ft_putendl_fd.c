@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/02/04 17:39:16 by jeremy            #+#    #+#             */
+/*   Updated: 2023/02/04 17:39:17 by jeremy           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
 The function ft_putendl_fd use write to copy the string s the file descriptor fd,
 followed by a newline character.

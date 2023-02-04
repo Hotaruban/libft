@@ -1,40 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/04 17:37:32 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 17:46:30 by jeremy           ###   ########.fr       */
+/*   Created: 2023/02/04 17:38:19 by jeremy            #+#    #+#             */
+/*   Updated: 2023/02/04 18:10:08 by jeremy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-The function ft_atoi convert the initial portion of the string into int and return the int.
+The function ft_lstclear pass the node pointed by lst and the node after
+to the function pointed by del, and free the memory of the nodes.
 */
 
-int	ft_atoi(const char *s)
-{
-	int	i;
-	int	sign;
-	int	num;
+#include "libft.h"
 
-	i = 0;
-	sign = 1;
-	num = 0;
-	while (s[i] == 32 || (s[i] >= 9 && s[i] <= 13))
-		i++;
-	if (s[i] == 45 || s[i] == 43)
+void ft_lstclear(t_list **lst, void (*del)(void*))
+{
+	void	*temp;
+
+	while (*lst->next != NULL)
 	{
-		if (s[i] == 45)
-			sign *= -1;
-		i++;
+		temp = lst->next;
+		del(*lst->content);
+		free(*lst->next);
+		lst = temp;
 	}
-	while (s[i] >= 48 && s[i] <= 57)
+	if (*lst->next == NULL)
 	{
-		num = num  * 10 + (s[i] - 48);
-		i++;
+		del(*lst);
+		free(*lst);
 	}
-	return (num * sign);
 }

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/02/04 17:40:35 by jeremy            #+#    #+#             */
+/*   Updated: 2023/02/04 17:40:36 by jeremy           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
 The function ft_substr creat a substring from the string s.
 The substring begin at index of start and copy for len size in substring.

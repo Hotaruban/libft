@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/02/04 17:39:45 by jeremy            #+#    #+#             */
+/*   Updated: 2023/02/04 17:39:46 by jeremy           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
 The function ft_strchr locates the first occurence of c in the string pointed to by s, this included the null character.
 

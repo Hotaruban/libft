@@ -1,40 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/04 17:37:32 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 17:46:30 by jeremy           ###   ########.fr       */
+/*   Created: 2023/02/04 17:38:39 by jeremy            #+#    #+#             */
+/*   Updated: 2023/02/04 17:38:40 by jeremy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-The function ft_atoi convert the initial portion of the string into int and return the int.
+The function ft_lstnew creat a new node with the new content send in argument.
+
+Return the pointer to the content with malloc memory allocated.
 */
 
-int	ft_atoi(const char *s)
-{
-	int	i;
-	int	sign;
-	int	num;
+#include <stdlib.h>
+#include "libft.h"
 
-	i = 0;
-	sign = 1;
-	num = 0;
-	while (s[i] == 32 || (s[i] >= 9 && s[i] <= 13))
-		i++;
-	if (s[i] == 45 || s[i] == 43)
-	{
-		if (s[i] == 45)
-			sign *= -1;
-		i++;
-	}
-	while (s[i] >= 48 && s[i] <= 57)
-	{
-		num = num  * 10 + (s[i] - 48);
-		i++;
-	}
-	return (num * sign);
+t_list *ft_lstnew(void *content)
+{
+	t_list	new_node;
+
+	new_node = (t_list *)malloc(sizeof(t_list));
+	new_node->content = content;
+	new_node->next = NULL;
+	return (new_node);
 }

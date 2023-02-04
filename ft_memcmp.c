@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/02/04 17:38:54 by jeremy            #+#    #+#             */
+/*   Updated: 2023/02/04 17:38:55 by jeremy           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
-The function ft_memcmp compare byte string s1 against byte string s2. 
+The function ft_memcmp compare byte string s1 against byte string s2.
 Both strings are assumed to be n bytes long.
 
-Return zero if both are identical, 
+Return zero if both are identical,
 otherwise the differnce between the first two differing bytes.
 Zero-lenght strings are identical.
 */

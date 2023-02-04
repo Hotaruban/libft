@@ -1,5 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/02/04 17:37:42 by jeremy            #+#    #+#             */
+/*   Updated: 2023/02/04 17:42:33 by jeremy           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
-The function ft_calloc allocates enough space for count objects that are size bytes of memory each is filled with bytes of value zero.
+The function ft_calloc allocates enough space for count objects that are size bytes of memory,
+each is filled with bytes of value zero.
 
 Return a pointer to allocated memory.
 */

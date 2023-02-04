@@ -1,5 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/02/04 17:40:17 by jeremy            #+#    #+#             */
+/*   Updated: 2023/02/04 17:40:18 by jeremy           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
-The function ft_strncmp compares not more then n characters 
+The function ft_strncmp compares not more then n characters
 of the NUL-terminated strings s1 and s2.
 
 Returns an integer greater than, equal to, or less then 0,

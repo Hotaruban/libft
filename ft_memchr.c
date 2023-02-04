@@ -1,5 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/02/04 17:38:49 by jeremy            #+#    #+#             */
+/*   Updated: 2023/02/04 17:38:50 by jeremy           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
-The function ft_memchr locates the first occurence of c in string s, 
+The function ft_memchr locates the first occurence of c in string s,
 search in no more than len characteres of in string s.
 
 Return a pointer to the byte located c.

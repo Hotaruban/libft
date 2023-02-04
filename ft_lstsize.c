@@ -1,40 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/04 17:37:32 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 17:46:30 by jeremy           ###   ########.fr       */
+/*   Created: 2023/02/04 17:38:45 by jeremy            #+#    #+#             */
+/*   Updated: 2023/02/04 17:38:46 by jeremy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-The function ft_atoi convert the initial portion of the string into int and return the int.
+The function ft_lstsize count every node of the list, start at 1 to count the Null.
+
+Return the lenght of the list.
 */
 
-int	ft_atoi(const char *s)
-{
-	int	i;
-	int	sign;
-	int	num;
+#include "libft.h"
 
-	i = 0;
-	sign = 1;
-	num = 0;
-	while (s[i] == 32 || (s[i] >= 9 && s[i] <= 13))
-		i++;
-	if (s[i] == 45 || s[i] == 43)
+int ft_lstsize(t_list *lst)
+{
+	size_t	len_list;
+
+	if (lst->content == NULL)
 	{
-		if (s[i] == 45)
-			sign *= -1;
-		i++;
+		len_list = 0;
+		return (len_list);
 	}
-	while (s[i] >= 48 && s[i] <= 57)
+	len_list = 1;
+	while (lst->next != NULL)
 	{
-		num = num  * 10 + (s[i] - 48);
-		i++;
+		lst = lst->next;
+		len_list++;
 	}
-	return (num * sign);
+	return (len_list);
 }
