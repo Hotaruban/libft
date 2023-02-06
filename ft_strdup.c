@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:39:49 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 17:39:50 by jeremy           ###   ########.fr       */
+/*   Updated: 2023/02/06 10:10:28 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,19 +19,25 @@ The pointer may be used as an argument to the function free.
 
 #include <stdlib.h>
 #include "libft.h"
+/*
+char *str;
+str = NULL; str[0]
+str = ""; str[0] {'\0'}
+str = "hello world"; str[0] str[1]
+
+*/
 
 char	*ft_strdup(const char *s)
 {
 	char	*p;
 	size_t	len;
 
-	len = ft_strlen(s) + 1;
 	if (s == NULL)
 		return (0);
-	p = (char *)malloc(len * sizeof(char));
+	len = ft_strlen(s);
+	p = (char *)malloc(sizeof(char) * (len + 1));
 	if (p == 0)
 		return (NULL);
-	else
-	ft_strlcpy(p, s, len);
+	ft_strlcpy(p, s, len + 1);
 		return (p);
 }

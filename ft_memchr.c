@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:38:49 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 17:38:50 by jeremy           ###   ########.fr       */
+/*   Updated: 2023/02/05 01:08:41 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ Return a pointer to the byte located c.
 
 void	*ft_memchr(const void *s, int c, size_t len)
 {
-	char	*ptr;
+	unsigned char	*ptr;
 
-	ptr = (char *) s;
+	ptr = (unsigned char *) s;
 	while (len > 0)
 	{
 		if (*ptr == (unsigned char) c)

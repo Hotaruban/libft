@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:40:30 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 17:40:31 by jeremy           ###   ########.fr       */
+/*   Updated: 2023/02/06 12:27:45 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,20 +23,24 @@ Return the new trimmed string.
 char	*ft_strtrim(char const *s1, char const *set)
 {
     size_t  start;
-    size_t  end;
     size_t  len;
 
+    if (set == NULL)
+        return (ft_strdup(s1));
+    if (s1 == NULL)
+        return (NULL);
+    start = 0;
+    while (ft_strchr(set, s1[start]) != NULL)
+    {
+        start++;
+        if (start == ft_strlen(s1))
+            return (ft_strdup(""));
+    }
     start = 0;
     while (ft_strchr(set, s1[start]) != NULL)
         start++;
-    end = 0;
     len = ft_strlen(s1) - 1;
-    while (ft_strrchr(set, s1[len]) != NULL)
-    {
-        end++;
+    while (ft_strchr(set, s1[len]) != NULL)
         len--;
-    }
-    if ((start == 0 && end == 0) || set == NULL)
-        return (ft_strdup(s1));
     return (ft_substr(s1, start, (len - start + 1)));
 }
