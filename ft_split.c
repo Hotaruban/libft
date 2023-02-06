@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:39:35 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 17:39:36 by jeremy           ###   ########.fr       */
+/*   Updated: 2023/02/06 14:26:50 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,19 +37,24 @@ static void	*mem_free(char **tab, int i)
 static int	count_str(char const *s, char c)
 {
 	int		i;
-	int		str;
+	int		count;
 
 	i = 0;
-	str = 0;
-	while (s[i] != '\0')
+	count = 0;
+	if (s[i] == 0)
+		return (count);
+	if (s[i] != c && i == 0)
 	{
-		if (s[i] != c && i == 0)
-			str++;
-		if (s[i] != c && s[i - 1] == c && i > 0)
-			str++;
+		count++;
 		i++;
 	}
-	return (str);
+	while (s[i] != '\0')
+	{
+		if (s[i] != c && s[i - 1] == c && i > 0)
+			count++;
+		i++;
+	}
+	return (count);
 }
 
 static char	*tab_line(char const *s, int i, char c)
@@ -73,8 +78,8 @@ static char	*tab_line(char const *s, int i, char c)
 			j++;
 			len++;
 		}
-			if (k == i)
-				str = ft_substr(s, index, len);
+		if (k == i)
+			str = ft_substr(s, index, len);
 		k++;
 	}
 	return (str);
@@ -85,6 +90,7 @@ char		**ft_split(char const *s, char c)
 	char	**tab;
 	int		line;
 	int		i;
+
 
 	line = count_str(s, c);
 	tab = (char **)malloc(sizeof(char *) * (line + 1));
