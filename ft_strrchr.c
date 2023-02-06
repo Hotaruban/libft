@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:40:25 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 17:40:26 by jeremy           ###   ########.fr       */
+/*   Updated: 2023/02/06 19:12:37 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-The function ft_strrchr locates the last occurence of c in the string pointed to by s, this included the null character.
+The function ft_strrchr locates the last occurence of c
+in the string pointed to by s, this included the null character.
 
 Return a pointer to the located character.
 */

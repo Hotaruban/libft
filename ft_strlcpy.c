@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:40:05 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 17:40:06 by jeremy           ###   ########.fr       */
+/*   Updated: 2023/02/06 19:11:59 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-the function ft_strlcpy copies up to dstsize - 1 characteres from string src to dst.
+the function ft_strlcpy copies up to dstsize -1 characteres
+from string src to dst.
 NUL-terminating the result if dstsize is not 0.
 
 Returns the (ft_strlen) total lenght of the string src to create.

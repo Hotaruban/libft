@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:37:32 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 17:46:30 by jeremy           ###   ########.fr       */
+/*   Updated: 2023/02/06 19:06:18 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-The function ft_atoi convert the initial portion of the string into int and return the int.
+The function ft_atoi convert the initial portion of the string into int
+and return the int.
 */
 
 int	ft_atoi(const char *s)
@@ -33,7 +34,7 @@ int	ft_atoi(const char *s)
 	}
 	while (s[i] >= 48 && s[i] <= 57)
 	{
-		num = num  * 10 + (s[i] - 48);
+		num = num * 10 + (s[i] - 48);
 		i++;
 	}
 	return (num * sign);

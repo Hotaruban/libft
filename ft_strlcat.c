@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:40:01 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 17:40:02 by jeremy           ###   ########.fr       */
+/*   Updated: 2023/02/06 19:12:11 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-The function ft_strlcat appends string src to the end of dst. It append at most dstsize - strlen(dst) - 1 characters and will NUL-terminate.
+The function ft_strlcat appends string src to the end of dst.
+It append at most dstsize - strlen(dst) - 1 characters and will NUL-terminate.
 
 Return length of dst + lenght of src.
 */

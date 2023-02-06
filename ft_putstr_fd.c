@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:39:31 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 17:39:32 by jeremy           ###   ########.fr       */
+/*   Updated: 2023/02/06 19:09:20 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-The function ft_putstr_fd use write to copy the string s in the file descriptor fd.
+The function ft_putstr_fd use write to copy the string s
+in the file descriptor fd.
 
 Return nothing.
 */

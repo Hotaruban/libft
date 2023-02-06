@@ -6,12 +6,13 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:39:45 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/05 16:20:56 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/02/06 19:24:00 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-The function ft_strchr locates the first occurence of c in the string pointed to by s, this included the null character.
+The function ft_strchr locates the first occurence of c
+in the string pointed to by s, this included the null character.
 
 Return a pointer to the located character.
 */

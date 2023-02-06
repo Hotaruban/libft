@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/31 22:14:51 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/03 12:32:59 by jeremy           ###   ########.fr       */
+/*   Updated: 2023/02/06 19:24:52 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,11 +53,11 @@ char	*ft_itoa(int n)
 		ptr[0] = '-';
 		numb = numb * -1;
 	}
-	while(numb > 0)
+	while (numb > 0)
 	{
 		len--;
 		ptr[len] = numb % 10 + 48;
-		numb =numb / 10;
+		numb = numb / 10;
 	}
 	return (ptr);
 }

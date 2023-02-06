@@ -6,12 +6,13 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:37:42 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 21:51:03 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/02/06 19:06:57 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-The function ft_calloc allocates enough space for count objects that are size bytes of memory,
+The function ft_calloc allocates enough space for count objects
+that are size bytes of memory,
 each is filled with bytes of value zero.
 
 Return a pointer to allocated memory.

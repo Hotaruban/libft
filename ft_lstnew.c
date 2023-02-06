@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:38:39 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 22:59:53 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/02/06 19:08:10 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ Return the pointer to the content with malloc memory allocated.
 #include <stdlib.h>
 #include "libft.h"
 
-t_list *ft_lstnew(void *content)
+t_list	*ft_lstnew(void *content)
 {
 	t_list	*new_node;
 

@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:39:35 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/06 14:26:50 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/02/06 19:24:12 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,12 +85,11 @@ static char	*tab_line(char const *s, int i, char c)
 	return (str);
 }
 
-char		**ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	char	**tab;
 	int		line;
 	int		i;
-
 
 	line = count_str(s, c);
 	tab = (char **)malloc(sizeof(char *) * (line + 1));

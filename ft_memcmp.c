@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:38:54 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 17:38:55 by jeremy           ###   ########.fr       */
+/*   Updated: 2023/02/06 19:24:29 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ Zero-lenght strings are identical.
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	*p1;
-	unsigned char 	*p2;
+	unsigned char	*p2;
 
 	p1 = (unsigned char *) s1;
 	p2 = (unsigned char *) s2;

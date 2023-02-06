@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:40:35 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/06 12:18:29 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/02/06 19:22:13 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,22 +20,22 @@ Return the substring creat from s, or NULL if memory not allocated.
 #include <stdlib.h>
 #include "libft.h"
 
-char *ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-    char    *sub_s;
-    size_t  sub_n;
-    size_t  i;
+	char	*sub_s;
+	size_t	sub_n;
+	size_t	i;
 
-    if (ft_strlen(s) <= start || len == 0)
-        return (ft_strdup(""));
-    i = ft_strlen(&s[start]);
-    if (len > i)
-        sub_n = i + 1;
-    else
-        sub_n = len + 1;
-    sub_s = (char *)malloc(sub_n * sizeof(char));
-    if (sub_s == 0)
-        return (0);
-    ft_strlcpy(sub_s, &s[start], sub_n);
-    return (sub_s);
+	if (ft_strlen(s) <= start || len == 0)
+		return (ft_strdup(""));
+	i = ft_strlen(&s[start]);
+	if (len > i)
+		sub_n = i + 1;
+	else
+		sub_n = len + 1;
+	sub_s = (char *)malloc(sub_n * sizeof(char));
+	if (sub_s == 0)
+		return (0);
+	ft_strlcpy(sub_s, &s[start], sub_n);
+	return (sub_s);
 }
