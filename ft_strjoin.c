@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:39:57 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/06 19:22:55 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/02/14 00:25:15 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*new_s;
 	size_t	len_new_s;
 
+	if (s1 == NULL)
+		return (NULL);
 	len_new_s = ft_strlen(s1) + ft_strlen(s2) + 1;
 	new_s = (char *)malloc(len_new_s * sizeof(char));
 	if (new_s == 0)

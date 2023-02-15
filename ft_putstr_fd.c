@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:39:31 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/06 19:09:20 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/02/14 00:43:00 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,13 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
 
-	i = 0;
-	while (s[i] != '\0')
+	if (s != NULL)
 	{
-		write (fd, &s[i], 1);
-		i++;
+		i = 0;
+		while (s[i] != '\0')
+		{
+			write (fd, &s[i], 1);
+			i++;
+		}
 	}
 }

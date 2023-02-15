@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:40:21 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 17:40:22 by jeremy           ###   ########.fr       */
+/*   Updated: 2023/02/15 00:48:51 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,15 +32,16 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	needle_len = ft_strlen(needle);
 	if (needle_len == 0)
 		return (ptr);
-	if (!ft_strlen(haystack) || len < needle_len)
-		return (0);
-	i = 0;
-	while (ptr[i] != 0 && i < (len - needle_len + 1))
+	if (!(len < needle_len || haystack == NULL))
 	{
-		if (ptr[i] == *needle
-			&& (ft_strncmp(&ptr[i], needle, needle_len) == 0))
-			return (&ptr[i]);
-		i++;
+		i = 0;
+		while (ptr[i] != 0 && i < (len - needle_len + 1))
+		{
+			if (ptr[i] == *needle
+				&& (ft_strncmp(&ptr[i], needle, needle_len) == 0))
+				return (&ptr[i]);
+			i++;
+		}
 	}
 	return (0);
 }

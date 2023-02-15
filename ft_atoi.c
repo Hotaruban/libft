@@ -6,13 +6,14 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:37:32 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/06 19:06:18 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/02/15 15:18:56 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-The function ft_atoi convert the initial portion of the string into int
-and return the int.
+The function ft_atoi convert the initial portion of the string into int.
+
+Return the int.
 */
 
 int	ft_atoi(const char *s)

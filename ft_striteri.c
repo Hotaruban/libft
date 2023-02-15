@@ -6,15 +6,13 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:39:53 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/06 19:23:20 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/02/14 00:38:51 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-The function ft_strjoin allocate memory
-and concatenate the string s1 and s2 in new string.
-
-Return the new string result.
+The function ft_striteri pass the function pointed by f
+to every characteres of the string s.
 */
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
@@ -22,10 +20,13 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	unsigned int	i;
 
 	i = 0;
-	while (s[i] != '\0')
+	if (s != 0)
 	{
-		f(i, &s[i]);
-		i++;
+		while (s[i] != '\0')
+		{
+			f(i, &s[i]);
+			i++;
+		}
+		s[i] = '\0';
 	}
-	s[i] = '\0';
 }

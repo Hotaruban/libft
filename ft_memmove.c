@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:39:03 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 17:39:04 by jeremy           ###   ########.fr       */
+/*   Updated: 2023/02/16 02:52:20 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ The two strings may overlap, the copy is always done in a non-destructive manner
 Returns the original value of dst.
 */
 
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
@@ -26,17 +26,16 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 
 	d = (unsigned char *)dst;
 	s = (unsigned char *)src;
-	if (dst < src)
+	if (d == s || len == 0)
+		return (d);
+	if (d > s && s + len > d)
 	{
 		while (len--)
-			*d++ = *s++;
+		{
+			d[len] = s[len];
+		}
 	}
 	else
-	{
-		d += len;
-		s += len;
-		while (len--)
-			*--d = *--s;
-	}
-	return (dst);
+		return (ft_memcpy(d, s, len));
+	return (d);
 }

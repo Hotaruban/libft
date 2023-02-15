@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:38:23 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/06 16:47:20 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/02/14 00:49:58 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ and free the memory of this node.
 
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
+	if (lst == NULL || del == NULL)
+		return ;
 	if (lst != NULL)
 	{
 		del(lst->content);

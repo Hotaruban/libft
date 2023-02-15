@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:40:35 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/06 19:22:13 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/02/14 00:24:26 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	sub_n;
 	size_t	i;
 
+	if (s == NULL)
+		return (NULL);
 	if (ft_strlen(s) <= start || len == 0)
 		return (ft_strdup(""));
 	i = ft_strlen(&s[start]);

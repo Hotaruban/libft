@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:40:25 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/06 19:12:37 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/02/16 00:34:15 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,13 @@ char	*ft_strrchr(const char *s, int c)
 	char	*ptr;
 
 	len = ft_strlen(s);
-	ptr = (char *) s + len;
-	if ((char) c == 0)
-		return (ptr);
-	while ((len + 1) > 0)
+	ptr = (char *)s + len;
+	if ((char)c == 0)
+		return (ptr++);
+	while (ptr >= s)
 	{
-		if (*ptr == (char) c)
+		if (*ptr == (char)c)
 			return (ptr);
-		len--;
 		ptr--;
 	}
 	return (NULL);
