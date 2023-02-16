@@ -6,15 +6,13 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:39:31 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/14 00:43:00 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/02/16 20:50:59 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 The function ft_putstr_fd use write to copy the string s
 in the file descriptor fd.
-
-Return nothing.
 */
 
 #include <unistd.h>

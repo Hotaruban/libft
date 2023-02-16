@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:39:49 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/13 22:49:26 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/02/16 21:03:22 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strdup(const char *s)
 
 	len = ft_strlen(s);
 	p = (char *)malloc(sizeof(char) * (len + 1));
-	if (p == 0)
+	if (p == NULL)
 		return (NULL);
 	ft_strlcpy(p, s, len + 1);
 	return (p);

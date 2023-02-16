@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:39:45 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/13 20:51:22 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/02/16 21:05:21 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,5 @@ char	*ft_strchr(const char *s, int c)
 	}
 	if (*s == (unsigned char) c)
 		return ((char *) s);
-	return (0);
+	return (NULL);
 }

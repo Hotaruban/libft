@@ -6,15 +6,13 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/31 22:15:20 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 23:29:45 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/02/16 20:51:08 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 The function ft_putnbr_fd use copy a integer in the file descriptor fd.
 The integer must to be change in characters.
-
-Return nothing.
 */
 
 #include <unistd.h>

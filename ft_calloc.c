@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:37:42 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/06 19:06:57 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/02/16 21:05:07 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	*ft_calloc(size_t count, size_t size)
 	if (count == SIZE_MAX || size == SIZE_MAX)
 		return (NULL);
 	p = (void *)malloc(count * size);
-	if (p == 0)
+	if (p == NULL)
 		return (NULL);
 	ft_bzero(p, count * size);
 	return (p);

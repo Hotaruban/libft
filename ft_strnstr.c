@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:40:21 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/16 18:43:57 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/02/16 21:14:36 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	char	*ptr;
 
 	ptr = (char *) haystack;
-	if (*needle == NULL)
+	if (*needle == 0)
 		return (ptr);
 	if (len == 0)
 		return (NULL);

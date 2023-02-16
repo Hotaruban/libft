@@ -6,13 +6,12 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:38:35 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/06 16:47:01 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/02/16 20:46:40 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 The function ft_lstmap creat a new list.
-
 */
 
 #include "libft.h"

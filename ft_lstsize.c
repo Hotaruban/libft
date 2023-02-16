@@ -6,13 +6,12 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:38:45 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/06 19:08:21 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/02/16 20:46:28 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-The function ft_lstsize count every node of the list,
-start at 1 to count the Null.
+The function ft_lstsize count every node of the list.
 
 Return the lenght of the list.
 */

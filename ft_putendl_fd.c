@@ -6,15 +6,13 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:39:16 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/14 00:43:47 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/02/16 20:51:13 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 The function ft_putendl_fd use write to copy the string s the file descriptor fd,
 followed by a newline character.
-
-Return nothing.
 */
 
 #include <unistd.h>
