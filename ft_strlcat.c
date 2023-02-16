@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:40:01 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/15 00:47:12 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/02/16 17:52:30 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	dstlen;
 	size_t	srclen;
 
-	dstlen = ft_strlen(dst);
 	srclen = ft_strlen(src);
-	if ((dstsize == 0) || (dstsize <= dstlen))
+	if (dst == NULL && dstsize == 0)
+		return (srclen);
+	dstlen = ft_strlen(dst);
+	if (dstsize <= dstlen)
 		return (dstsize + srclen);
 	i = 0;
 	j = dstlen;
