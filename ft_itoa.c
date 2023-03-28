@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/31 22:14:51 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/06 19:24:52 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/03/26 17:33:16 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ Return the string in malloc.
 
 #include <stdlib.h>
 
-size_t	check_len(int n)
+static size_t	check_len(int n)
 {
 	size_t	len;
 
