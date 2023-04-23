@@ -6,20 +6,21 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:37:46 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/06 19:07:07 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/04/20 14:56:50 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-The function ft_isalnum test every caracteres if they are alpha
-- lower or upper case - or digit in ASCII table.
-
-Return 0 if the characters test is false.
+The ft_isalnum function checks whether the given character is
+an alphanumeric character. An alphanumeric character is
+any uppercase or lowercase letter or any decimal digit.
+The function takes an integer as its argument, which represents
+the character to be checked, and
+returns 1 if the character is alphanumeric and 0 otherwise.
 */
-
-#include "libft.h"
 
 int	ft_isalnum(int c)
 {
-	return (ft_isalpha(c) || ft_isdigit(c));
+	return ((c >= 65 && c <= 90) || (c >= 97 && c <= 122) ||
+		 (c >= 48 && c <= 57));
 }

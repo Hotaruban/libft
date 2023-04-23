@@ -6,14 +6,19 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:37:32 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/15 15:18:56 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/04/20 14:32:16 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-The function ft_atoi convert the initial portion of the string into int.
-
-Return the int.
+The ft_atoi function is a C function that takes a string as input and
+returns an integer representing the numeric value of the string.
+It ignores whitespace at the beginning of the string and
+analyzes the following characters to determine the numeric value.
+It takes into account the sign of the numeric value,
+which can be specified by the characters '+' or '-'.
+The function returns the integer corresponding to
+the numeric value of the string.
 */
 
 int	ft_atoi(const char *s)

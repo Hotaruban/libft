@@ -3,17 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeremy <jeremy@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:38:01 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/04 17:38:02 by jeremy           ###   ########.fr       */
+/*   Updated: 2023/04/20 14:57:25 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-The function ft_isdigit test every caracteres if they are digit in ASCII table.
-
-Return 0 if the characters test is false.
+The ft_isdigit() function checks whether the given character is a digit.
+It returns a non-zero value if the character is a digit and zero otherwise.
 */
 
 int	ft_isdigit(int c)

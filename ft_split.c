@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:39:35 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/17 20:03:14 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/04/18 18:24:04 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,11 +92,11 @@ char	**ft_split(char const *s, char c)
 	int		i;
 
 	line = count_str(s, c);
+	if (s == NULL)
+		return (NULL);
 	tab = (char **)malloc(sizeof(char *) * (line + 1));
 	if (tab == NULL)
 		return (0);
-	if (s == NULL)
-		return (NULL);
 	tab[line] = NULL;
 	i = 0;
 	while (i < line)

@@ -6,20 +6,30 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:37:42 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/16 21:05:07 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/04/20 14:44:39 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-The function ft_calloc allocates enough space for count objects
-that are size bytes of memory,
-each is filled with bytes of value zero.
+The ft_calloc function allocates a block of memory for an array
+of count elements, each of size bytes, and initializes the memory to zero.
+It first checks for potential overflow by comparing count and
+size with the maximum possible value of a size_t.
+If either is equal to SIZE_MAX, the function returns NULL to indicate an error.
 
-Return a pointer to allocated memory.
+If the allocation is successful, ft_calloc then uses malloc to allocate
+the requested amount of memory and returns a pointer to
+the first byte of the allocated memory. It then uses ft_bzero to set
+all the bytes in the allocated memory block to zero.
 */
 
 #include <stdlib.h>
-#include "libft.h"
+
+void	ft_bzero(void *s, size_t n)
+{
+	while (n--)
+		*(unsigned char *)s++ = 0;
+}
 
 void	*ft_calloc(size_t count, size_t size)
 {

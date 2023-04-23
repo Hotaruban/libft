@@ -6,15 +6,15 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:37:51 by jeremy            #+#    #+#             */
-/*   Updated: 2023/02/06 19:07:15 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/04/20 14:51:01 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-The function ft_isalpha test every caracteres if they are alpha
-- lower or upper case in ASCII table.
-
-Return 0 if the characters test is false.
+The ft_isalpha() function checks whether the given character is
+an alphabetic character (uppercase or lowercase).
+It returns a non-zero value if the character is
+an alphabetic character and zero otherwise.
 */
 
 int	ft_isalpha(int c)
