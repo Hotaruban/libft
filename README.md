@@ -1,5 +1,9 @@
 # libft
 
+This version is totaly different than the vesion who pass the commun core of 42.
+It is my version with get_next_line (bonus) and with some extra function.
+I still modifiy some part to make it better and to improve comment.
+
 This is my first project as (cadet) in 42 Bangkok.
 
 I test with 3 tester before submit
