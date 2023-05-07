@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:40:35 by jeremy            #+#    #+#             */
-/*   Updated: 2023/05/07 02:14:03 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/05/07 16:15:21 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ Return the substring creat from s, or NULL if memory not allocated.
 */
 
 #include <stdlib.h>
-#include "../include/libft.h"
+#include "../includes/libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

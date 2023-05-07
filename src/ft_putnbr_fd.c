@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/31 22:15:20 by jeremy            #+#    #+#             */
-/*   Updated: 2023/05/07 02:13:16 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/05/07 16:14:35 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ The integer must to be change in characters.
 */
 
 #include <unistd.h>
-#include "../include/libft.h"
+#include "../includes/libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {

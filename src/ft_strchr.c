@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:39:45 by jeremy            #+#    #+#             */
-/*   Updated: 2023/05/07 02:13:29 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/05/07 16:14:49 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ in the string pointed to by s, this included the null character.
 Return a pointer to the located character.
 */
 
-#include "../include/libft.h"
+#include "../includes/libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

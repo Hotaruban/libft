@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:39:49 by jeremy            #+#    #+#             */
-/*   Updated: 2023/05/07 02:13:32 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/05/07 16:14:52 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ The pointer may be used as an argument to the function free.
 */
 
 #include <stdlib.h>
-#include "../include/libft.h"
+#include "../includes/libft.h"
 
 char	*ft_strdup(const char *s)
 {

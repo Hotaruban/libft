@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:40:30 by jeremy            #+#    #+#             */
-/*   Updated: 2023/05/07 02:13:59 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/05/07 16:15:18 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ Return the new trimmed string.
 */
 
 #include <stdlib.h>
-#include "../include/libft.h"
+#include "../includes/libft.h"
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

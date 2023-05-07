@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:39:35 by jeremy            #+#    #+#             */
-/*   Updated: 2023/05/07 02:13:25 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/05/07 16:14:46 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ Return the array of new strings.
 */
 
 #include <stdlib.h>
-#include "../include/libft.h"
+#include "../includes/libft.h"
 
 static void	*mem_free(char **tab, int i)
 {

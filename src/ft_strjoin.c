@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:39:57 by jeremy            #+#    #+#             */
-/*   Updated: 2023/05/07 02:13:38 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/05/07 16:14:56 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ Return the new string result.
 */
 
 #include <stdlib.h>
-#include "../include/libft.h"
+#include "../includes/libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

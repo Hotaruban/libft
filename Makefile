@@ -6,7 +6,7 @@
 #    By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/05 01:19:33 by jhurpy            #+#    #+#              #
-#    Updated: 2023/05/07 02:22:03 by jhurpy           ###   ########.fr        #
+#    Updated: 2023/05/07 16:15:56 by jhurpy           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ NAME = libft.a
 SRC_DIR = src
 OBJ_DIR = obj
 INC_DIR = includes
-LIBS_DIR = ft_printf
+LIBS_DIR =
 
 # Sources, objects and dependencies
 SOURCES = $(wildcard $(SRC_DIR)/*.c)

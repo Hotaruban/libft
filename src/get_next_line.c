@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 15:03:16 by jhurpy            #+#    #+#             */
-/*   Updated: 2023/05/07 02:16:14 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/05/07 16:15:29 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ Line_and_remains change the remains and the len_rem, and finaly return the line.
 Read_fd read the file descriptor and copy every buf in remains.
 */
 
-#include "../include/libft.h"
+#include "../includes/libft.h"
 
 static t_fd_list	*creat_node_new_fd(int fd, t_fd_list **list)
 {

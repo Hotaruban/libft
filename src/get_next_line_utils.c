@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 15:03:12 by jhurpy            #+#    #+#             */
-/*   Updated: 2023/05/07 02:16:23 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/05/07 16:15:27 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ Ft_strlcpy copy the source in the destination respecting the dstsize.
 Ft_strlcat concatenate the source after the destination respecting the dstsize.
 */
 
-#include "../include/libft.h"
+#include "../includes/libft.h"
 
 size_t	special_strlen(const char *s)
 {
