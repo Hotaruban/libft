@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:40:25 by jeremy            #+#    #+#             */
-/*   Updated: 2023/05/07 16:15:15 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/05/12 00:30:27 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,18 +21,16 @@ Return a pointer to the located character.
 
 char	*ft_strrchr(const char *s, int c)
 {
-	size_t	len;
 	char	*ptr;
 
-	len = ft_strlen(s);
-	ptr = (char *)s + len;
-	if ((char)c == 0)
-		return (ptr++);
-	while (ptr >= s)
+	ptr = NULL;
+	while (*s)
 	{
-		if (*ptr == (char)c)
-			return (ptr);
-		ptr--;
+		if (*s == c)
+			ptr = (char *)s;
+		s++;
 	}
-	return (NULL);
+	if (*s == c)
+		return ((char *)s);
+	return (ptr);
 }

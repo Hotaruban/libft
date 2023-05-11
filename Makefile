@@ -6,15 +6,14 @@
 #    By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/05 01:19:33 by jhurpy            #+#    #+#              #
-#    Updated: 2023/05/07 16:21:38 by jhurpy           ###   ########.fr        #
+#    Updated: 2023/05/10 22:45:03 by jhurpy           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Compiler and flags
 CC = gcc
-C_FLAGS = -Wall -Wextra -Werror
+C_FLAGS = -Wall -Wextra -Werror -g3 # -fsanitize=address,undefined,leak
 D_FLAGS = -MMD -MP -MF $(OBJ_DIR)/$*.d
-#S_FLAGS = -g -fsanitize=address,undefined,leak
 
 # Commands
 RM = rm -rf
@@ -25,19 +24,18 @@ NAME = libft.a
 SRC_DIR = src
 OBJ_DIR = obj
 INC_DIR = includes
-LIBS_DIR =
 
-# Sources, objects and dependencies
+# Sources and objects
 SOURCES = $(wildcard $(SRC_DIR)/*.c)
 OBJECTS = $(SOURCES:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
 
 # Default target, build the library
-all: $(NAME) $(LIBS_DIR)
+all: $(NAME)
 
 # Object file build rule
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@mkdir -p $(dir $@)
-	@$(CC) $(C_FLAGS) $(D_FLAGS) $(S_FLAGS) -I $(INC_DIR) -c $< -o $@
+	@$(CC) $(C_FLAGS) $(D_FLAGS) -I $(INC_DIR) -c $< -o $@
 
 # Target library build rule
 $(NAME): $(OBJECTS)
