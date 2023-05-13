@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:43:21 by jeremy            #+#    #+#             */
-/*   Updated: 2023/05/07 02:16:49 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/05/14 03:21:01 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
+int		ft_ishexa(int c);
 size_t	ft_strlen(const char *s);
 void	*ft_memset(void *s, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
@@ -52,6 +53,7 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 int		ft_atoi(const char *s);
+int		ft_atoi_base(const char *str);
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(const char *s);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
