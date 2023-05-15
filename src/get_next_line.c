@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 15:03:16 by jhurpy            #+#    #+#             */
-/*   Updated: 2023/05/07 16:15:29 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/05/15 17:27:47 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ Read_fd read the file descriptor and copy every buf in remains.
 
 #include "../includes/libft.h"
 
-static t_fd_list	*creat_node_new_fd(int fd, t_fd_list **list)
+t_fd_list	*creat_node_new_fd(int fd, t_fd_list **list)
 {
 	t_fd_list	*new_list;
 
@@ -43,7 +43,7 @@ static t_fd_list	*creat_node_new_fd(int fd, t_fd_list **list)
 	return (new_list);
 }
 
-static t_fd_list	*free_node_if_empty(int fd, t_fd_list **cursor)
+t_fd_list	*free_node_if_empty(int fd, t_fd_list **cursor)
 {
 	t_fd_list	*prev;
 	t_fd_list	*current;
@@ -67,27 +67,27 @@ static t_fd_list	*free_node_if_empty(int fd, t_fd_list **cursor)
 	return (*cursor);
 }
 
-static char	*line_and_remains(t_fd_list *cursor)
+char	*line_and_remains(t_fd_list *cursor)
 {
 	char	*line;
 	int		len_nl;
 	int		tmp;
 
 	tmp = cursor->len_rem;
-	len_nl = (special_strlen(cursor->remains));
+	len_nl = (ft_strlen_gnl(cursor->remains, 1));
 	cursor->len_rem -= len_nl;
-	if (ft_strlen(cursor->remains) == 0)
+	if (ft_strlen_gnl(cursor->remains, 0) == 0)
 		return (NULL);
 	line = malloc(sizeof(char) * (len_nl + 1));
 	if (line == NULL)
 		return (NULL);
-	ft_strlcpy(line, cursor->remains, len_nl + 1);
-	ft_strlcpy(cursor->remains, cursor->remains + len_nl, cursor->len_rem);
+	ft_strlcpy_gnl(line, cursor->remains, len_nl + 1);
+	ft_strlcpy_gnl(cursor->remains, cursor->remains + len_nl, cursor->len_rem);
 	cursor->remains = ft_realloc(cursor->remains, tmp, cursor->len_rem);
 	return (line);
 }
 
-static void	read_fd(int fd, t_fd_list *cursor)
+void	read_fd(int fd, t_fd_list *cursor)
 {
 	char	*buf;
 	int		tmp;
@@ -104,7 +104,7 @@ static void	read_fd(int fd, t_fd_list *cursor)
 		buf[cursor->len_read] = 0;
 		cursor->len_rem += cursor->len_read;
 		cursor->remains = ft_realloc(cursor->remains, tmp, cursor->len_rem);
-		ft_strlcat(cursor->remains, buf, cursor->len_rem);
+		ft_strlcat_gnl(cursor->remains, buf, cursor->len_rem);
 		if (find_n(cursor->remains) == 1)
 			break ;
 	}

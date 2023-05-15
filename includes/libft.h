@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:43:21 by jeremy            #+#    #+#             */
-/*   Updated: 2023/05/14 03:21:01 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/05/15 17:29:04 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,10 +70,12 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
 /*
-The get_next_line project.
+The get_next_line project and his utils.
 */
 char	*get_next_line(int fd);
-size_t	special_strlen(const char *s);
+size_t	ft_strlen_gnl(const char *s, char c);
 int		find_n(char *s);
+void	ft_strlcat_gnl(char *dst, const char *src, size_t dstsize);
+void	ft_strlcpy_gnl(char *dst, const char *src, size_t dstsize);
 
 #endif

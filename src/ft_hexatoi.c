@@ -6,9 +6,17 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/14 00:53:40 by jhurpy            #+#    #+#             */
-/*   Updated: 2023/05/15 12:21:36 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/05/15 17:28:38 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+int		ft_ishexa(int c)
+{
+	if ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'F')
+			|| (c >= 'a' && c <= 'f'))
+		return (1);
+	return (0);
+}
 
 /*
 The function ft_atoi_base converts the string argument str (base N <= 16)
