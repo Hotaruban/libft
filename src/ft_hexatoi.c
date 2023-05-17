@@ -6,11 +6,11 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/14 00:53:40 by jhurpy            #+#    #+#             */
-/*   Updated: 2023/05/17 16:21:52 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/05/17 18:32:11 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_ishexa(int c)
+static int	ft_ishexa(int c)
 {
 	if ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'F')
 			|| (c >= 'a' && c <= 'f'))
@@ -22,7 +22,7 @@ int		ft_ishexa(int c)
 The function ft_atoi_base converts the string argument str (base N <= 16)
 */
 
-int	ft_hexatoi(const char *str)
+int			ft_hexatoi(const char *str)
 {
 	int	result;
 	int	i;
