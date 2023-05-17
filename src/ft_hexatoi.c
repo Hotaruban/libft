@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/14 00:53:40 by jhurpy            #+#    #+#             */
-/*   Updated: 2023/05/15 17:28:38 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/05/17 16:21:52 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,26 +25,20 @@ The function ft_atoi_base converts the string argument str (base N <= 16)
 int	ft_hexatoi(const char *str)
 {
 	int	result;
-	int	sign;
+	int	i;
 
 	result = 0;
-	sign = 1;
-	if (*str == '-')
-	{
-		sign = -1;
-		str++;
-	}
-	while (ft_ishexa(*str))
+	i = 2;
+	while (ft_ishexa(str[i]))
 	{
 		result = result * 16;
-		if (*str >= '0' && *str <= '9')
-			result += (*str - '0');
-		else if (*str >= 'a' && *str <= 'f')
-			result += (*str - 'a' + 10);
-		else if (*str >= 'A' && *str <= 'F')
-			result += (*str - 'A' + 10);
-		str++;
+		if (str[i] >= '0' && str[i] <= '9')
+			result += (str[i] - '0');
+		else if (str[i] >= 'a' && str[i] <= 'f')
+			result += (str[i] - 'a' + 10);
+		else if (str[i] >= 'A' && str[i] <= 'F')
+			result += (str[i] - 'A' + 10);
+		i++;
 	}
-	return (result * sign);
+	return (result);
 }
-
