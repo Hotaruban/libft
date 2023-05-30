@@ -6,7 +6,7 @@
 #    By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/05 01:19:33 by jhurpy            #+#    #+#              #
-#    Updated: 2023/05/10 22:45:03 by jhurpy           ###   ########.fr        #
+#    Updated: 2023/05/31 01:46:03 by jhurpy           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,11 +22,54 @@ AR = ar rc
 # Target library name and directories
 NAME = libft.a
 SRC_DIR = src
+SRC_FILES = ft_atoi.c \
+		ft_bzero.c \
+		ft_calloc.c \
+		ft_hexatoi.c \
+		ft_isalnum.c \
+		ft_isalpha.c \
+		ft_isascii.c \
+		ft_isdigit.c \
+		ft_ishexa.c \
+		ft_isprint.c \
+		ft_isspace.c \
+		ft_itoa.c \
+		ft_memchr.c \
+		ft_memcmp.c \
+		ft_memcpy.c \
+		ft_memmove.c \
+		ft_memset.c \
+		ft_putchar.c \
+		ft_putchar_fd.c \
+		ft_putendl_fd.c \
+		ft_putnbr_fd.c \
+		ft_putstr.c \
+		ft_putstr_fd.c \
+		ft_realloc.c \
+		ft_split.c \
+		ft_strchr.c \
+		ft_strdup.c \
+		ft_striteri.c \
+		ft_strjoin.c \
+		ft_strlcat.c \
+		ft_strlcpy.c \
+		ft_strlen.c \
+		ft_strmapi.c \
+		ft_strncmp.c \
+		ft_strnstr.c \
+		ft_strrchr.c \
+		ft_strtrim.c \
+		ft_substr.c \
+		ft_tolower.c \
+		ft_toupper.c \
+		get_next_line.c \
+		get_next_line_utils.c
+
 OBJ_DIR = obj
 INC_DIR = includes
 
 # Sources and objects
-SOURCES = $(wildcard $(SRC_DIR)/*.c)
+SOURCES = $(addprefix $(SRC_DIR)/, $(SRC_FILES))
 OBJECTS = $(SOURCES:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
 
 # Default target, build the library
@@ -41,10 +84,6 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 $(NAME): $(OBJECTS)
 	@$(AR) $(NAME) $(OBJECTS)
 	@ranlib $(NAME)
-
-# Rule to build each personal library
-$(LIBS_DIR):
-	$(MAKE) -C $@
 
 # Clean object files
 clean:
