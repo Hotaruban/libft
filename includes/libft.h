@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:43:21 by jeremy            #+#    #+#             */
-/*   Updated: 2023/06/04 22:28:51 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/06/05 00:10:23 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
-}
+}				t_list;
 
 typedef struct s_fd_list
 {
