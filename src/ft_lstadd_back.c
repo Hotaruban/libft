@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/04 22:23:13 by jhurpy            #+#    #+#             */
-/*   Updated: 2023/06/04 22:24:27 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/06/06 23:57:07 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 The function ft_lstadd_back add a new node at the end of the list.
 */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {

@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/04 22:25:13 by jhurpy            #+#    #+#             */
-/*   Updated: 2023/06/04 22:25:15 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/06/06 23:57:19 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ in function pointed by del,
 and free the memory of this node.
 */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {

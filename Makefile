@@ -6,7 +6,7 @@
 #    By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/05 01:19:33 by jhurpy            #+#    #+#              #
-#    Updated: 2023/05/31 01:46:03 by jhurpy           ###   ########.fr        #
+#    Updated: 2023/06/07 00:53:19 by jhurpy           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,15 @@ SRC_FILES = ft_atoi.c \
 		ft_isprint.c \
 		ft_isspace.c \
 		ft_itoa.c \
+		ft_lstadd_back.c \
+		ft_lstadd_front.c \
+		ft_lstclear.c \
+		ft_lstdelone.c \
+		ft_lstiter.c \
+		ft_lstlast.c \
+		ft_lstmap.c \
+		ft_lstnew.c \
+		ft_lstsize.c \
 		ft_memchr.c \
 		ft_memcmp.c \
 		ft_memcpy.c \
