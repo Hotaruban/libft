@@ -6,7 +6,7 @@
 #    By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/05 01:19:33 by jhurpy            #+#    #+#              #
-#    Updated: 2023/06/07 00:53:19 by jhurpy           ###   ########.fr        #
+#    Updated: 2023/06/07 17:36:32 by jhurpy           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,7 @@ AR = ar rc
 NAME = libft.a
 SRC_DIR = src
 SRC_FILES = ft_atoi.c \
+		ft_atol.c \
 		ft_bzero.c \
 		ft_calloc.c \
 		ft_hexatoi.c \
