@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/07 17:31:28 by jhurpy            #+#    #+#             */
-/*   Updated: 2023/06/07 17:34:03 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/06/07 17:38:22 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ The function returns the converted value, if any.
 
 long	ft_atol(const char *s)
 {
-	size_t	i;
+	int		i;
 	long	sign;
 	long	num;
 
