@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 17:43:21 by jeremy            #+#    #+#             */
-/*   Updated: 2023/06/07 17:37:19 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/06/22 02:04:23 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_ishexa(int c);
+int		ft_isspace(int c);
 size_t	ft_strlen(const char *s);
 void	*ft_memset(void *s, int c, size_t len);
 void	ft_bzero(void *s, size_t n);

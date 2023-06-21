@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/07 17:31:28 by jhurpy            #+#    #+#             */
-/*   Updated: 2023/06/07 17:38:22 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/06/22 02:05:03 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 The ft_atol() function converts the initial portion of the string pointed to by
 s to long representation.
 It ignores all white-space characters at the beginning of the string, converts
-the subsequent characters as part of the number, and then stops when it encounters
-the first character that isn't a number.
+the subsequent characters as part of the number,
+and then stops when it encounters the first character that isn't a number.
 The function returns the converted value, if any.
 */
 
