@@ -6,7 +6,7 @@
 #    By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/05 01:19:33 by jhurpy            #+#    #+#              #
-#    Updated: 2023/06/07 17:36:32 by jhurpy           ###   ########.fr        #
+#    Updated: 2023/12/20 19:18:51 by jhurpy           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -91,7 +91,7 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@$(CC) $(C_FLAGS) $(D_FLAGS) -I $(INC_DIR) -c $< -o $@
 
 # Target library build rule
-$(NAME): $(OBJECTS)
+$(NAME): $(OBJECTS) $(INC_DIR)/libft.h
 	@$(AR) $(NAME) $(OBJECTS)
 	@ranlib $(NAME)
 
